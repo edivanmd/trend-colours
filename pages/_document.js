@@ -6,7 +6,7 @@ export default function Document() {
       <Head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;600&display=swap" rel="stylesheet"></link>
+        <link href="https://fonts.googleapis.com/css2?family=Fascinate&family=Oswald:wght@300;600&display=swap" rel="stylesheet"/>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <body>
