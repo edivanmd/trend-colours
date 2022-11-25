@@ -6,37 +6,34 @@
   html {
     scroll-behavior: smooth;
     font-family: 'Oswald', sans-serif;
+    background-color: theme('colors.black');
   }
 }
 
 @layer components {
+
+  :root {
+    --stroke-width: calc(1em / 16);
+  }
+
   .card {
     border-radius: theme('borderRadius.md');
     padding: theme('spacing.5');
-    box-shadow: theme('boxShadow.xl');
-    background-color: theme('colors.black');
-  }
-  .fixed-card {
-    display: flex;
-    align-items: center;
-  }
-  .fixed-card h2{
-    font-family: theme('fontFamily.fascinate');
-    font-size: theme('fontSize.7xl');
-    line-height: 60px;
-    text-align: center;
-    /* text-transform: uppercase; */
-    background: url(../public/assets/bg-universe.jpg) 0 0 / cover no-repeat;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    background-color: theme('colors.white')!important;
   }
 
-  .card-md {
-    /* background-color: theme('colors.black'); */
-    /* height: 315px; 
-    border-radius: theme('borderRadius.md');
-    padding: theme('spacing.6');
-    box-shadow: theme('boxShadow.xl'); */
+  .quote { background-color: theme('colors.black')!important; }
+
+  .colorful-stroke h2{
+    /* background-image: linear-gradient(to right, #09f1b8, #00a2ff, #ff00d2, #fed90f); */
+    /* background-image: linear-gradient(to right, #A414D9, #FF802B, #F9E105, #34C7A5, #5D50CE); */
+    font-family: theme('fontFamily.fascinate');
+    background-clip: text;
+    background-image: linear-gradient(to right, #2364ED, #FFE724, #FE3CB3, #47D736, #9F4CC4, #FA2F39);
+    color: #000119;
+    padding: calc(--stroke-width / 2);
+    -webkit-text-stroke-color: transparent;
+    -webkit-text-stroke-width: var(--stroke-width);
   }
 }
 

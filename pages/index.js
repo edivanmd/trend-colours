@@ -1,14 +1,9 @@
 import Head from 'next/head'
 import CardColor from '../components/CardColor'
-import Image from 'next/image'
+import Quote from '../components/Quote'
+import NeonSignQuote from '../components/quotes/NeonSignQuote'
 
 const infoCards = [
-  {
-      title: "All colours will agree in the dark",
-      image: 'none',
-      classes: 'card-sm fixed-card col-span-2',
-      nameCard: 'logo',
-  },
   {
       title: "Title 2",
       image: 'https://images.unsplash.com/photo-1570075017462-b5478b3abfff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1203&q=80',
@@ -67,15 +62,28 @@ const infoCards = [
 }
 ]
 
-
 export default function Home() {
   return (
     <div>
-      <main className='flex max-w-[1240px] mx-auto p-9 bg-slate-500 justify-center items-center'> {/* h-screen */}
-          <ul className='grid flex-wrap grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 lg:gap-2 p-3 bg-red-400'>
+      <main className='flex max-w-[1240px] mx-auto justify-center items-center'> {/* h-screen */}
+          <ul className='grid flex-wrap grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 lg:gap-2 p-2'>
+            {/* <Quote 
+              text={"<p><span id='fast-flicker'>C</span>olo<span id='flicker'>u</span>rs</p> speak all languages."}
+              author={'Joseph Addison.'}
+              quoteStyle={'neon-sign'}
+            /> */}
+            <NeonSignQuote 
+              text={"all"}
+              author={'Joseph Addison.'}
+            />
             {infoCards.map((infoCard, index) => (       
               <CardColor key={index} infoCard={infoCard} />
-            ))}
+              ))}
+            <Quote 
+              text={'All colours will agree in the dark.'}
+              author={'Francis Bacon.'}
+              quoteStyle={'colorful-stroke'}
+            />
           </ul>
       </main>
     </div>

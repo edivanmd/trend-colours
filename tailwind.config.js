@@ -7,7 +7,10 @@ module.exports = {
   theme: {
     extend: {},
     fontFamily: {
-      'fascinate': ['Fascinate', 'cursive'],
+      'fascinate': ['"Fascinate Inline"', 'cursive'],
+      'modak': ['Modak', 'cursive'],
+      'neonderthaw': ['Neonderthaw', 'cursive'],
+      'bungee': ['"Bungee Shade"', 'cursive'],
     }
   },
   plugins: [],
