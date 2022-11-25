@@ -10,8 +10,8 @@ const NeonSignQuote = ({ title, text, author }) => {
     <li className={styles.neonSign + ' quote col-span-2'}>
         <div className= {styles.quoteWrap + ' flex flex-col place-content-center rounded-sm'}>
             <h2 className= {styles.quoteH2 + ' tracking-tight text-5xl text-center p-1 md:text-[4.8rem]'} > 
-                <p className={'text-8xl md:text-[6rem]'}><span className={styles.fastFlicker}>C</span>olo<span className={styles.flicker}>u</span>r<span  className={styles.swing2}>s</span></p>
-                <span className={styles.flicker2}>sp</span>eak {text} lan<span className={styles.flicker2}>g</span>ua<span className={styles.flicker3}>g</span>es.
+                <p className={'mb-2 text-8xl md:text-[6rem]'}><span className={styles.fastFlicker}>C</span>olour<span  className={styles.swing2}>s</span></p>
+                spea<span className={styles.flicker}>k</span> {text} langu<span className={styles.flicker2}>a</span><span className={styles.flicker3}>g</span>es.
             </h2>
             <figure className={styles.swing}>
                 <Image 

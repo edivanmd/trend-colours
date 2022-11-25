@@ -43,6 +43,7 @@
 .flicker { animation: shine 2s forwards, blink 3s 2s infinite; transform: rotate(20deg); }
 .flicker2 { animation: shine 1s forwards, blink 5s 2s infinite; transform: rotate(20deg); }
 .flicker3 { animation: shine 3s forwards, blink 6s 2s infinite; transform: rotate(20deg); }
+.flicker4 { animation: shine 1s forwards, blink 1s 1s infinite;}
 .fastFlicker { animation: shine 2s forwards, blink 10s 1s infinite; }
   
 @keyframes shine {
@@ -131,7 +132,7 @@
 }
 
 .swing2 {
-  animation: swing2 ease-in-out 1s infinite alternate, shine 2s forwards, blink 10s 1s infinite;;
+  animation: swing2 ease-in-out 1s infinite alternate, shine 1s forwards, blink 1s 1s infinite;
   transform-origin: -3px 76px;
   transform: rotate(130deg);
   display: inline-block;
