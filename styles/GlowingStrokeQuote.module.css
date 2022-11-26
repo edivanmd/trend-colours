@@ -1,0 +1,25 @@
+.GlowingStrokeH2{
+    background-image: linear-gradient(to right, #09f1b8, #00a2ff, #ff00d2, #fed90f);
+    font-family: theme('fontFamily.fascinate');
+    /* background-image: linear-gradient(to right, #A414D9, #FF802B, #F9E105, #34C7A5, #5D50CE); */
+    background-clip: text;
+    /* background-image: linear-gradient(to right, #2364ED, #FFE724, #FE3CB3, #47D736, #9F4CC4, #FA2F39); */
+    color: #000119;
+    -webkit-text-stroke-color: transparent;
+    -webkit-text-stroke-width: calc(1em / 16);
+}
+
+.span { animation: glow 2s ease-in-out both infinite;}
+.span:nth-child(1) { animation-delay: -0.2857142857s; }
+.span:nth-child(2) { animation-delay: -0.5714285714s; }
+.span:nth-child(3) { animation-delay: -0.8571428571s; }
+.span:nth-child(4) { animation-delay: -1.1428571429s; }
+.span:nth-child(5) { animation-delay: -1.4285714286s; }
+.span:nth-child(6) { animation-delay: -1.7142857143s; }
+.span:nth-child(7) { animation-delay: -2s; }
+
+@keyframes glow {
+    0%, 100% { text-shadow: 0 0 8.3333333333px snow, 0 -25px 50px tomato, -25px 25px 50px yellow, 25px 25px 50px tomato; }
+    33% { text-shadow: 0 0 8.3333333333px snow, 0 -25px 50px cyan, -25px 25px 50px tomato, 25px 25px 50px cyan; }
+    66% { text-shadow: 0 0 8.3333333333px snow, 0 -25px 50px yellow, -25px 25px 50px cyan, 25px 25px 50px yellow; }
+}

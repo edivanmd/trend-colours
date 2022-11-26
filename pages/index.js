@@ -1,7 +1,6 @@
-import Head from 'next/head'
 import CardColor from '../components/CardColor'
-import Quote from '../components/Quote'
 import NeonSignQuote from '../components/quotes/NeonSignQuote'
+import GlowingStrokeQuote from '../components/quotes/GlowingStrokeQuote'
 
 const infoCards = [
   {
@@ -67,22 +66,17 @@ export default function Home() {
     <div>
       <main className='flex max-w-[1240px] mx-auto justify-center items-center'> {/* h-screen */}
           <ul className='grid flex-wrap grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 lg:gap-2 p-2'>
-            {/* <Quote 
-              text={"<p><span id='fast-flicker'>C</span>olo<span id='flicker'>u</span>rs</p> speak all languages."}
-              author={'Joseph Addison.'}
-              quoteStyle={'neon-sign'}
-            /> */}
-            <NeonSignQuote 
-              text={"all"}
-              author={'Joseph Addison.'}
+            <GlowingStrokeQuote
+              text={'will agree in the dark.'}
+              author={'Francis Bacon.'}
             />
             {infoCards.map((infoCard, index) => (       
               <CardColor key={index} infoCard={infoCard} />
-              ))}
-            <Quote 
-              text={'All colours will agree in the dark.'}
-              author={'Francis Bacon.'}
-              quoteStyle={'colorful-stroke'}
+              ))
+            }
+            <NeonSignQuote 
+              text={"all"}
+              author={'Joseph Addison.'}
             />
           </ul>
       </main>
