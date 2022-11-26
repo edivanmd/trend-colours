@@ -5,7 +5,7 @@ const GlowingStrokeQuote = ({ text, author }) => {
   return (
     <li className='quote col-span-2 flex'>
         <div className='flex flex-col place-content-center rounded-md bg-[#111111] m-auto w-[100%] h-[100%] py-5'>
-            <h2 className={styles.GlowingStrokeH2 + ' tracking-tight text-4xl text-center pt-5 md:text-[2.5rem] '}>
+            <h2 className={styles.GlowingStrokeH2 + ' tracking-tight text-4xl text-center p-5 md:text-[2.5rem] '}>
                 <p className='leading-[0rem]'>
                   <span className='inline-block ml-7'>All</span> 
                   <br/>
