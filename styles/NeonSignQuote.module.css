@@ -37,15 +37,51 @@
       0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
   }
   28%, 33% { color: #ff65bd; text-shadow: none; }
-  82%, 97% { color: #ff2483; text-shadow: none; }
+  /* 82%, 97% { color: #ff2483; text-shadow: none; } */
 }
   
-.flicker { animation: shine 2s forwards, blink 3s 2s infinite; transform: rotate(20deg); }
-.flicker2 { animation: shine 1s forwards, blink 5s 2s infinite; transform: rotate(20deg); }
-.flicker3 { animation: shine 3s forwards, blink 6s 2s infinite; transform: rotate(20deg); }
-.flicker4 { animation: shine 1s forwards, blink 1s 1s infinite;}
+.flicker { animation: shine 2s forwards, blink 10s 1s infinite; transform: rotate(20deg); }
+.flicker2 { animation: shine 2s forwards, blink 5s 2s infinite; transform: rotate(20deg); }
+.flicker3 { animation: shine 2s forwards, blink 6s 2s infinite; transform: rotate(20deg); }
+.flicker4 { animation: shine 2s forwards, blink 1s 1s infinite;}
+.flicker5 { animation: shine 2s forwards, crazyBlink 1s 1s infinite; transform: rotate(20deg); }
 .fastFlicker { animation: shine 2s forwards, blink 10s 1s infinite; }
   
+
+@keyframes crazyBlink {
+  1% { 
+    color: #ffe6ff;
+    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd, -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd, 0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483; 
+  } 
+  4% { color: #ff65bd; text-shadow: none; } 
+  8% { color: #ffe6ff; text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd, -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd, 0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;  } 
+  12% { color: #ff65bd; text-shadow: none; } 
+  16% { color: #ffe6ff; text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd, -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd, 0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;  }  
+  20% { color: #ff65bd; text-shadow: none; } 
+  24% { color: #ffe6ff; text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd, -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd, 0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;  } 
+  28% { color: #ff65bd; text-shadow: none; } 
+  32% { color: #ffe6ff; text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd, -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd, 0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;  }  
+  36% { color: #ff65bd; text-shadow: none; } 
+  40% { color: #ffe6ff; text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd, -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd, 0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;  } 
+  44% { color: #ff65bd; text-shadow: none; } 
+  48% { color: #ffe6ff; text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd, -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd, 0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;  } 
+  52% { color: #ff65bd; text-shadow: none; } 
+  56% { color: #ffe6ff; text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd, -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd, 0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;  }  
+  60% { color: #ff65bd; text-shadow: none; } 
+  64% { color: #ffe6ff; text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd, -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd, 0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;  } 
+  68% { color: #ff65bd; text-shadow: none; } 
+  72% { color: #ffe6ff; text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd, -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd, 0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;  } 
+  76% { color: #ff65bd; text-shadow: none; } 
+  80% { color: #ffe6ff; text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd, -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd, 0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;  } 
+  84% { color: #ff65bd; text-shadow: none; } 
+  88% { color: #ffe6ff; text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd, -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd, 0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;  } 
+  92% { color: #ff65bd; text-shadow: none; } 
+  96% { color: #ffe6ff; text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd, -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd, 0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;  } 
+  98% { color: #ff65bd; text-shadow: none; } 
+  99% { color: #ffe6ff; text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd, -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd, 0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;  }  
+  100% { color: #ff65bd; text-shadow: none; } 
+}
+
 @keyframes shine {
   0% {
     color: #6b1839;
@@ -132,7 +168,7 @@
 }
 
 .swing2 {
-  animation: swing2 ease-in-out 1s infinite alternate, shine 1s forwards, blink 1s 1s infinite;
+  animation: swing2 ease-in-out 1s infinite alternate, shine 2s forwards, blink 1s 1s infinite;
   transform-origin: -3px 76px;
   transform: rotate(130deg);
   display: inline-block;

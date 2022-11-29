@@ -8,9 +8,8 @@ module.exports = {
     extend: {},
     fontFamily: {
       'fascinate': ['"Fascinate Inline"', 'cursive'],
-      'modak': ['Modak', 'cursive'],
       'neonderthaw': ['Neonderthaw', 'cursive'],
-      'bungee': ['"Bungee Shade"', 'cursive'],
+      'finger': ['"Finger Paint"', 'cursive'],
     }
   },
   plugins: [],
