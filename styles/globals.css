@@ -12,12 +12,11 @@
 
 @layer components {
   
-  .card {
-    border-radius: theme('borderRadius.md');
-    padding: theme('spacing.1');
-    /* background-color: theme('colors.white')!important; */
-  }
+  /* .card {
+    border-radius: theme('borderRadius.lg');
+    padding: theme('spacing.3');
+  } */
 
-  .quote { background-color: theme('colors.black')!important; }
+  /* .quote { background-color: theme('colors.black')!important; } */
 }
 

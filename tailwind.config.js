@@ -10,6 +10,8 @@ module.exports = {
       'fascinate': ['"Fascinate Inline"', 'cursive'],
       'neonderthaw': ['Neonderthaw', 'cursive'],
       'finger': ['"Finger Paint"', 'cursive'],
+      'squarePeg': ['"Square Peg"', 'cursive'],
+      'roboto': ['Roboto', '"sans-serif"'],
     }
   },
   plugins: [],
