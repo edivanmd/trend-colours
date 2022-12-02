@@ -7,15 +7,8 @@ import ExpandedCard from './ExpandedCard'
 
 const CardColor = ({ dataCard }) => {
   
-  let router = useRouter();
-  
   const [selectedId, setSelectedId] = useState(null)
-
-  const handleClose = () =>  { 
-    setSelectedId(null); 
-    router.push("/");
-    console.log('ki')
-  }
+  const handleClose = () =>  { setSelectedId(null); }
 
   return (
     <>
@@ -25,7 +18,7 @@ const CardColor = ({ dataCard }) => {
         layoutId={dataCard.nameColor} 
         onClick={() => setSelectedId(dataCard.nameColor)}
       > 
-        <motion.h2 className='font-finger text-white text-2xl text-center'>{dataCard.title}</motion.h2>
+        <motion.h2 className='font-finger text-white text-xl'>{dataCard.title}</motion.h2>
         <Image
           src={dataCard.image} 
           priority

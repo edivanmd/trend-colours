@@ -5,7 +5,7 @@ import styles from '../../styles/NeonSignQuote.module.css'
 
 const NeonSignQuote = () => {
   return (
-    <li className={styles.neonSign + ' quote col-span-2'}>
+    <li className={styles.neonSign + ' quote col-span-2 md:col-span-3'}>
         <div className= {styles.quoteWrap + ' flex flex-col place-content-center rounded-sm'}>
             <h2 className= {styles.quoteH2 + ' tracking-tight text-5xl text-center p-1 md:text-[4.8rem]'} > 
                 <p className={'mb-2 text-8xl md:text-[6rem]'}>

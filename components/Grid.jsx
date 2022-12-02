@@ -9,7 +9,7 @@ import { motion } from "framer-motion"
 const Grid = () => {
 
   return (
-    <ul className='grid grid-cols-2 gap-4'>
+    <ul className='grid grid-cols-2 md:grid-cols-3 gap-4'>
         <NeonSignQuote />
         {dataCards.map((dataCard, index) => (    
           <li key={index}>
